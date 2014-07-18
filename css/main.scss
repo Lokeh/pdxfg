@@ -9,18 +9,17 @@
 
 @import 'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 @import url(https://fonts.googleapis.com/css?family=Coda);
 
 $viewmax: 960px;
-$text-color-body: #ddd;
+$text-color-body: #333;
 
 html {
     height: 100%;
 }
 
 body {
-    background: #111;
+    background: #fefefe;
     font-family: 'Open Sans', sans-serif;
     color: $text-color-body;
     font-size: 16px;
@@ -43,7 +42,11 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         span#tagline {
-            color: rgba(255,121,0,.75);
+            color: rgba(255, 121, 0, 0.7);
+            @media (min-width: $screen-sm) {
+                color: rgba(255, 121, 0, 1);
+                font-weight: bold;
+            } 
         }
     }
 }
@@ -56,13 +59,40 @@ body {
 #about {
     background: rgba(255,255,255,.75);
     color: #222;
+    
     @media (min-width: $screen-sm) {
+        text-align: center;
         padding: 50px
     }
 }
 
+#phone {
+    @extend .btn;
+    @include button-variant(#eee, #333842, lighten(#333842, 10%));
+}
+
+.info {
+    @include make-row();
+    max-width: 600px;
+    margin: 20px auto 0;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact, .hours {
+    @include make-sm-column(6);
+
+    @media (min-width: $screen-sm) {
+        text-align: left;
+    }
+}
+
 #products {
-    background: rgba(63, 70, 83, 0.75);
+    background: #333842; //rgba(63, 70, 83, 0.75);
+    h1, h2, h3 {
+        color: #efefef;
+    }
 }
 
 .content {
@@ -86,6 +116,49 @@ body {
         @include make-md-column(3);
         img {
             margin: 10px auto;
+            -webkit-transition: all 0.25s ease-out;
+            -moz-transition: all 0.25s ease-out;
+            -o-transition: all 0.25s ease-out;
+            transition: all 0.25s ease-out;
         }
+        
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#modalPic {
+    max-width: 100%;
+}
+
+.arrow-container{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    -ms-transform: translateX(-50%); /* IE 9 */
+    -webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+    transform: translateX(-50%);
+}
+
+.arrow {
+    color: #999999;
+}
+
+#bigarrow {
+    display: none;
+}
+
+#smallarrow {
+    display: initial;
+}
+
+@media (min-width: $screen-xs) {
+    #bigarrow {
+        display: initial;
+    }
+    
+    #smallarrow {
+        display: none;
     }
 }
