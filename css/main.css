@@ -5346,9 +5346,9 @@ html {
   height: 100%; }
 
 body {
-  background: #fefefe;
+  background: #111;
   font-family: 'Open Sans', sans-serif;
-  color: #333333;
+  color: #dddddd;
   font-size: 16px;
   height: 100%; }
 
@@ -5369,10 +5369,9 @@ body {
     padding-left: 20px;
     padding-right: 20px; }
     .logo .content span#tagline {
-      color: rgba(255, 121, 0, 0.7); }
+      color: rgba(255, 121, 0, 0.75); }
       @media (min-width: 768px) {
         .logo .content span#tagline {
-          color: #ff7900;
           font-weight: bold; } }
 
 .block {

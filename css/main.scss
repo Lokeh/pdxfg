@@ -12,14 +12,14 @@
 @import url(https://fonts.googleapis.com/css?family=Coda);
 
 $viewmax: 960px;
-$text-color-body: #333;
+$text-color-body: #ddd;
 
 html {
     height: 100%;
 }
 
 body {
-    background: #fefefe;
+    background: #111;
     font-family: 'Open Sans', sans-serif;
     color: $text-color-body;
     font-size: 16px;
@@ -42,9 +42,8 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         span#tagline {
-            color: rgba(255, 121, 0, 0.7);
+            color: rgba(255,121,0,.75);
             @media (min-width: $screen-sm) {
-                color: rgba(255, 121, 0, 1);
                 font-weight: bold;
             } 
         }
