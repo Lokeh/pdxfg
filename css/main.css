@@ -5354,7 +5354,8 @@ body {
 
 .logo {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .logo .content {
     max-width: 960px;
     width: 100%;
@@ -5382,7 +5383,7 @@ body {
 #about {
   background: url("/img/about/bjj_mobile.jpg") no-repeat;
   background-size: auto 100%;
-  background-position-x: 50%;
+  background-position: 50% 0;
   background-blend-mode: overlay;
   background-color: #D8D8D8;
   color: #222; }
@@ -5390,14 +5391,14 @@ body {
     #about {
       background: url("/img/about/bjj_mobile.jpg") no-repeat;
       background-size: 100% 100%;
-      background-position-x: 50%;
+      background-position: 50% 0;
       background-blend-mode: overlay;
       background-color: #D8D8D8; } }
   @media (min-width: 768px) {
     #about {
       background: url("/img/about/bjj.jpg") no-repeat;
       background-size: 100%;
-      background-position-y: 68%;
+      background-position: 0 68%;
       background-blend-mode: overlay;
       background-color: #D8D8D8; } }
   @media (min-width: 768px) {
