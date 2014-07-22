@@ -5486,7 +5486,8 @@ body {
   transform: translateX(-50%); }
 
 .arrow {
-  color: #999999; }
+  color: #999999;
+  cursor: pointer; }
 
 #bigarrow {
   display: none; }
