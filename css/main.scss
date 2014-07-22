@@ -57,7 +57,27 @@ body {
 }
 
 #about {
-    background: rgba(255,255,255,.75);
+    background: url('/img/about/bjj_mobile.jpg') no-repeat;
+    background-size: auto 100%;
+	background-position-x: 50%;
+    background-blend-mode: overlay;
+    background-color: #D8D8D8;
+    
+    @media(min-width: $screen-xs) {
+        background: url('/img/about/bjj_mobile.jpg') no-repeat;
+        background-size: 100% 100%;
+        background-position-x: 50%;
+        background-blend-mode: overlay;
+        background-color: #D8D8D8;
+    }
+    
+    @media (min-width: $screen-sm) {
+        background: url('/img/about/bjj.jpg') no-repeat;
+        background-size: 100%;
+    	background-position-y: 68%;
+        background-blend-mode: overlay;
+   		background-color: #D8D8D8;
+    }
     color: #222;
     
     @media (min-width: $screen-sm) {
@@ -75,7 +95,7 @@ body {
     @include make-row();
     max-width: 600px;
     margin: 20px auto 0;
-    background: rgba(0, 0, 0, 0.15);
+    background: #eee;
     padding: 20px;
     border-radius: 10px;
 }
