@@ -13,10 +13,6 @@
         });
     }
     
-    if (windowWidth > 500) {
-        doSomething;
-    }
-    
 
     $(document).ready(function () {
         var windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),

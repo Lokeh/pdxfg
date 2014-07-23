@@ -58,14 +58,14 @@ body {
 }
 
 #about {
-    background: url('/img/about/bjj_mobile.jpg') no-repeat;
+    background: url('../img/about/bjj_mobile.jpg') no-repeat;
     background-size: auto 100%;
 	background-position: 50% 0;
     background-blend-mode: overlay;
     background-color: #D8D8D8;
     
     @media(min-width: $screen-xs) {
-        background: url('/img/about/bjj_mobile.jpg') no-repeat;
+        background: url('../img/about/bjj_mobile.jpg') no-repeat;
         background-size: 100% 100%;
         background-position: 50% 0;
         background-blend-mode: overlay;
@@ -73,7 +73,7 @@ body {
     }
     
     @media (min-width: $screen-sm) {
-        background: url('/img/about/bjj.jpg') no-repeat;
+        background: url('../img/about/bjj.jpg') no-repeat;
         background-size: 100%;
     	background-position: 0 68%;
         background-blend-mode: overlay;
