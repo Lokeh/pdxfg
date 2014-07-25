@@ -5520,3 +5520,31 @@ body {
 
   #smallarrow {
     display: none; } }
+#deals .deals {
+  text-align: left;
+  margin-left: -15px;
+  margin-right: -15px; }
+  #deals .deals:before, #deals .deals:after {
+    content: " ";
+    display: table; }
+  #deals .deals:after {
+    clear: both; }
+  #deals .deals .image {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      #deals .deals .image {
+        float: left;
+        width: 33.33333%; } }
+  #deals .deals .desc {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px; }
+    @media (min-width: 992px) {
+      #deals .deals .desc {
+        float: left;
+        width: 66.66667%; } }

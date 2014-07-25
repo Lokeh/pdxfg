@@ -184,3 +184,17 @@ body {
         display: none;
     }
 }
+
+#deals {
+    .deals {
+        text-align: left;
+        @include make-row();
+        .image {
+        	@include make-md-column(4);
+        }    
+        .desc {
+            @include make-md-column(8);
+            margin-top: 10px;
+        }
+    }
+}
